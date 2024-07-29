@@ -53,3 +53,23 @@ header {
 .next {
     right: 25%;
 }
+
+#thumbnails-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#thumbnails-container img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#thumbnails-container img.active-thumb {
+    opacity: 1;
+    border: 2px solid #333;
+}
